@@ -82,11 +82,11 @@ namespace Link
 					{
 						using var fs = new FileStream(tag + FileExtension, FileMode.Create, FileAccess.Write);
 						fs.Write(byteArray, 0, byteArray.Length);
-						ConsoleHelper.WriteToConsole(tag + FileExtension, $"Файл успешно создан..");
+						ConsoleHelper.WriteToConsole(tag + FileExtension, $"Успех");
 					}
 					catch
 					{
-						ConsoleHelper.WriteToConsole(tag + FileExtension, $"Что-то пошло не так...");
+						ConsoleHelper.WriteToConsole(tag + FileExtension, $"Ошибка");
 					}
 				}
 		}
